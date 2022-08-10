@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Entities</title>
+</head>
+	<!--HTML tiene una forma de interpretar algunos caracteres, como el "<" ,">" y "&"-->
+	<!--Para que no haya ningun error de interpretacion, en lugar de usar "<" se utiliza este "&lt;"-->
+	<!--Para que no haya ningun error de interpretacion, en lugar de usar ">" se utiliza este "&gt;"-->
+	<!--Para que no haya ningun error de interpretacion, en lugar de usar "&" se utiliza este "&amp;"-->
+	<!--Ejemplo-->
+<body> 
+	<h1>Don't be afraid to be <then	a 100% sucess & >more:</h1>
+		<!--en ves de utilizar "" utilizaremos &quot;-->
+		<p>&quot;Okay, so we're looking at the document called html-entities-before.html which is located in the examples Lectures08 folder. And this document contains a quote from one of the US presidents, Theodore Roosevelt, which happens to be one of my favorite quotes of his and a very weird looking h1 content. So we can take a look at it, it says don't be afraid to be <then a 100% success & >more;. So let's take a look at what this looks like in the browser Andres&nbsp;Arrazola&nbsp;y&nbsp;Meza.&quot;
+		</p>
+		<!--el "&nbsp; nos sirve para cuando se acorte la ventana y no se separe el enunciado y se vaya todo junto"-->
+
+		<!--Una forma de ya corecta de poner el heder seria la siguiente-->
+	<h1>Don't be afraid to be &lt; then	a 100% sucess &amp; &gt;more</h1>
+		<!--vemos como se cambia el "<" por "&lt;" al igual que el ">" por "&gt;" y "&" por "&amp;" -->
+		<p>Theodor Roosevelt 1910 Copyright</p>
+		<!--para poner el Copyright se utiliza "&copy;"-->
+		<p>Theodor Roosevelt 1910 &copy; Copyright</p>
+</body>
+</html>

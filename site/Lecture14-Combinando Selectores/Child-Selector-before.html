@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Child Selector</title>
+	<style type="text/css">
+		
+		/*any article element which is a direct child of a section element, i.e., any articule lement whose immediate parent is a section element*/
+		Section > article{
+			color: green;
+			font-size: 24px;
+		}
+
+		/*any h2 element which is a direct child of a section element, i.e., any h2 element whose immediate parent is a section element.*/
+		section > h2{
+			color: green;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>Child Selector</h1>
+	<section>
+		<h2>Subheading</h2>
+		<div>
+			<article>Article which inside DIV, which is inside Section</article>
+		</div>
+	</section>
+	<section>
+		<article>Article as a direct child of the Section Element</article>
+	</section>
+	<h2>Subheading</h2>
+</body>
+</html>
