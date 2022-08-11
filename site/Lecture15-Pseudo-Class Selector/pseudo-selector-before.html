@@ -5,7 +5,52 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pseudo Class Selector</title>
 	<style type="text/css">
-		
+		header li{
+			list-style: none;
+		}
+		a:link, a:visited{
+			text-decoration: none;
+			background-color: green;
+			border: 1px	solid blue;
+			color: black;
+			display: block;
+			width: 200px; 
+			text-align: center;
+			margin-bottom: 3px;
+		}
+
+		a:hover, a:active{
+			background-color: blue;
+			color: whitesmoke;
+		}
+
+		header li:nth-child(3){
+			font-size: 16px;
+		}
+
+		section	div:nth-child(odd){
+			background-color: darkred;
+			display: block;
+			width: 100px;
+			text-align: center;
+			margin-bottom: 3px;
+		}
+
+		section	div:nth-child(4):hover{
+			background-color: green;
+			color: white;
+			cursor: pointer;
+		}
+
+		div:hover, div:active{
+			background-color: skyblue;
+			color: green;
+			display: block;
+			width: 100px;
+			text-align: center;
+
+		}
+
 	</style>
 </head>
 <body>
@@ -13,9 +58,9 @@
 
 	<header>
 		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="http://goo.gl/V0WL6s" target="_blank">AngularJS Course</a></li>
-			<li><a href="http://www.facebook.com/CourseraWebDev" target="_blank">Facebook Fan Page</a></li>
+			<li><a href="/">Home </a></li>
+			<li><a href="http://goo.gl/V0WL6s" target="_blank">AngularJS Course </a></li>
+			<li><a href="http://www.facebook.com/CourseraWebDev" target="_blank">Facebook Fan Page </a></li>
 		</ul>
 	</header>
 	<section>
